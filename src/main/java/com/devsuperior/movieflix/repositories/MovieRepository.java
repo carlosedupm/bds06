@@ -13,4 +13,5 @@ public interface MovieRepository extends JpaRepository<Movie, Long>{
 			+ "ORDER BY obj.title")
 	public Page<Movie> findByGenreId(Pageable pageable,Long genreId);
 
+
 }
